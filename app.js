@@ -1,10 +1,10 @@
 var express = require('express');
 var app = express();
 var mongoose = require('mongoose');
-var farmerDataFile = require('./data/farmers_data.json');
-var availableProductData = require('./data/available_products.json');
-var sponsoredData = require('./data/sponsored_farmers.json');
-var unsponsoredData = require('./data/unsponsored_farmers.json');
+var farmerDataFile = require('/app/data/farmers_data.json');
+var availableProductData = require('/app/data/available_products.json');
+var sponsoredData = require('/app/data/sponsored_farmers.json');
+var unsponsoredData = require('/app/data/unsponsored_farmers.json');
 
 
 //setting an environment variable
@@ -20,21 +20,21 @@ app.set('appData_4', unsponsoredData);
 
 //setting up a view engine
 app.set('view engine', 'ejs');
-app.set('views', '../app/views'); //specifying the view folder location
+app.set('views', '/app/views'); //specifying the view folder location
 
 app.locals.siteTitle = 'Agric-Biz';
 
 //accessing the static files
-app.use(express.static('../app/public'));
+app.use(express.static('/app/public'));
 
 //creating access to the routes
-app.use(require('./routes/index'));
-app.use(require('./routes/farmers')); 
-app.use(require('./routes/feedback'));
-app.use(require('./routes/about'));
-app.use(require('./routes/invest'));
-app.use(require('./routes/api'));
-app.use(require('./routes/prod_order'));
+app.use(require('/app/routes/index'));
+app.use(require('/app/routes/farmers')); 
+app.use(require('/app/routes/feedback'));
+app.use(require('/app/routes/about'));
+app.use(require('/app/routes/invest'));
+app.use(require('/app/routes/api'));
+app.use(require('/app/routes/prod_order'));
 
 //listening to the 3000 port
 var server = app.listen(app.get('port'), function(){
