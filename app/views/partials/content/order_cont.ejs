@@ -1,0 +1,66 @@
+
+    <div  id="place_order_form">
+        <h3 class="center white-text">Place order</h3>
+        <p class="center">Fill in the details required to order now or make a pre-order</p>
+
+        <!-- wrapping the form -->
+        <div class="container">
+            <form action="/" method="POST" >
+                <div class="row">
+            <!-- personal details block-->
+            <div class="personal-details-block col s12 l4">
+                <h5 class="center green-text text-darken-1">Personal</h5>
+                <div class="input-field">
+                    <label for="name">Name</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="input-field">
+                    <label for="address">Address</label>
+                    <input type="text" id="address">
+                </div>
+                <div class="input-field">
+                    <label for="tele">Telephone</label>
+                    <input type="text" id="tele">
+                </div>  
+                <div class="input-field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                </div>
+            </div>
+            <!-- product details block-->
+            <div class="personal-details-block col s12 l4">
+                <h5 class="center green-text text-darken-1">Product </h5>
+                <div class="input-field">
+                    <label for="productName">Product Name</label>
+                    <input type="text" id="productName">
+                </div>
+                <div class="input-field inline"> 
+                    <label for="quantity">Quantity</label>
+                    <input type="text" id="quantity" class="validate"> 
+                </div>
+            </div>
+                <!-- payment details block-->
+            <div class="personal-details-block col s12 l4">
+                <h5 class="center green-text text-darken-1">Payment </h5>
+                <div class="input-field">
+                    <label for="cardNumber" class="drop-down">Card number</label>
+                    <input type="text" id="cardNumber">
+                </div>
+                <div class="input-field">
+                    <label for="card_ccv">CCV Number</label>
+                    <input type="text" id="card_ccv">
+                </div>
+                <div class="input-field">
+                    <label for="card_ex_date">Card expiring date</label>
+                    <input type="text" id="card_ex_date" class="disable">
+                    
+                </div>  
+            </div>
+            <div class="input-field col m5 l5 offset-m3 offset-l2" id="btn-submit">
+                    <button class="btn-small blue">Submit</button>
+            </div>
+        </div><!-- end of row -->
+        </form>
+        </div><!-- end of the container -->
+    </div>
+   

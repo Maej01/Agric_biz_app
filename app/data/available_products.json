@@ -1,0 +1,44 @@
+{
+    "fruits_pd":[
+        {
+            "pdName": "mango",
+            "pdQuantity": "100 bags"
+        },
+        {
+            "pdName": "orange",
+            "pdQuantity": "120 bags"
+        },
+        {
+            "pdName": "banana",
+            "pdQuantity": "120 bags"
+        }
+    ],
+    "vegetables_pd":[
+        {
+            "pdName": "lettuce",
+            "pdQuantity": "60 bags"
+        },
+        {
+            "pdName": "carrot",
+            "pdQuantity": "80 bags"
+        },
+        {
+            "pdName": "tomato",
+            "pdQuantity": "15 cartons"
+        }
+    ],
+    "cereal_pd":[
+        {
+            "pdName": "rice",
+            "pdQuantity": "300 bags"
+        },
+        {
+            "pdName": "maize",
+            "pdQuantity": "150 bags"
+        },
+        {
+            "pdName": "benni",
+            "pdQuantity": "85 bags"
+        }
+    ]
+}

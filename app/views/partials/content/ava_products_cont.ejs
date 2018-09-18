@@ -1,0 +1,50 @@
+<!-- AVAILABLE PRODUCTS CONTENT -->
+<h5 class="center header-text">Available Products</h5>
+<div class="row ">
+    <div class="card col l6 pull-l1 wow fadeInLeft">
+        <!-- <div class="card-title">Fruits</div> -->
+        <div class="card-image">
+            <img id="fruits_img" src="/images/products/fruits.jpg" alt="fruits">
+            <h5>Fruits</h5>
+        </div>
+            <% fruitProduct.forEach(function(item){ %>
+                <p>
+                    <%= item.pdName %> <%= item.pdQuantity %><a href="#"><i class="material-icons green-text right">shopping_basket</i></a>
+                </p>
+            <% }); %>
+        
+    </div> 
+    <div class="card col l6 right wow fadeInLeft">
+        <div class="card-image">
+            <img id="vege_img" src="/images/products/vegetables.jpg" alt="vege">
+            <h5>Vegetables</h5>
+        </div>
+        <% vegetableProduct.forEach(function(item){ %>
+            <p>
+                <%= item.pdName %> <%= item.pdQuantity %><a href="#"><i class="material-icons green-text right">shopping_basket</i></a>
+            </p>
+        <% }); %>            
+    </div>   
+    <div class="card col l6 right wow fadeInLeft">
+        <div class="card-image">
+            <img id="cereal_img" src="/images/products/cereals2.jpg" alt="Cereal">
+            <h5>Cereal</h5>
+        </div>
+        <% cerealProduct.forEach(function(item){ %>
+            <p>
+                <%= item.pdName %> <%= item.pdQuantity %><a href="#"><i class="material-icons green-text right">shopping_basket</i></a>
+            </p>
+        <% }); %>
+    </div>
+    <div class="card col l6 pull-l1 wow fadeInLeft">
+        <div class="card-image">
+            <img id="last_img" src="/images/products/cereals.jpg" alt="">
+            <h5>Fruits</h5>
+        </div>
+            <% fruitProduct.forEach(function(item){ %>
+                <p>
+                    <%= item.pdName %> <%= item.pdQuantity %><a href="#"><i class="material-icons green-text right">shopping_basket</i></a>
+                </p>
+            <% }); %>
+    </div>
+</div> <!-- end of row -->

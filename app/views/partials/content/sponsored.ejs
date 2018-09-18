@@ -1,0 +1,14 @@
+ <!-- if request is sponsored_Farmers-->
+ <div class="col s6 l6 push-l2 farmers-btn">
+        <a href="/sponsored"><button class="btn-small blue">Sponsored Farmers</button></a>
+        <% spfarmer.forEach(function(item){ %> 
+            <% if(pageID == 'spFarmersDetail') { %> 
+                <h4><%= item.name %></h4> 
+                <img src="images/farmers/<%= item.shortname %>_tc.jpeg" alt="">   
+            
+            <h5>Product: <%= item.product %></h5>
+            <h5>Location: <%= item.location %></h5>
+            <% } %>
+        <% }); %> 
+    </div>
+            

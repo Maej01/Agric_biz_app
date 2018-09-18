@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <% include partials/template/head.ejs %>
+</head>
+<body id="<%= pageID %>">
+    <!-- header template-->
+    <% include partials/template/header.ejs %>
+
+    <!-- products section-->
+    <div class="container">
+        <div class="row">
+                <div class="col l7 products">
+                    <!-- products template -->
+                    <% include partials/content/ava_products_cont.ejs %>
+                </div>
+                <!-- end of products class -->
+                <div class="col l5 unav_products right">
+                    <!-- products template -->
+                    <% include partials/content/unava_products_cont.ejs %>
+                </div>
+        </div><!-- end of row -->
+    </div>
+
+    <!-- including the order_content-->
+    <% include partials/content/order_cont.ejs %>
+
+    <!-- including the js scripts template -->
+    <% include partials/template/jsscripts.ejs %>
+
+</body>
+    <!-- including the footer template -->
+    <% include partials/template/footer.ejs %>
+</html>
